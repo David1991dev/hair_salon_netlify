@@ -1,0 +1,159 @@
+@import "/src/colors.scss";
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .img-section {
+    position: relative;
+    background-color: $cover;
+    width: 100%;
+    overflow: hidden;
+    height: 750px;
+    img {
+      transform: translate(-230px, -75px);
+      width: 2300px;
+      animation-name:image-show;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      // transform: scale3d(1,1,1);
+      position: relative;
+      z-index: -10;
+    }
+    .slogen-container {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      position: absolute;
+      animation-name: slogen-move;
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      h1{
+        font-weight: 600;
+        &.slogen-part-2{
+          opacity: 0;
+          animation-name: slogen-part-2;
+          animation-delay: 2.5s;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+}
+
+.back{
+  overflow: hidden;
+}
+
+.introduction{
+  position: relative;
+  max-width: 940px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .self-image{
+    .adrienn{
+      margin-left: 30px;
+      width: 300px;
+    }
+    .circle{
+      width: 250px;
+      height: 250px;
+      background-color: $decoration;
+      position: absolute;
+      transform: translate(185px, -400px);
+      border-radius: 250px;
+      z-index: -1;
+    }
+  }
+  .introduction-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .flex-container{
+    .img-section{
+      height: 350px;
+      img{
+        width: 700px;
+        transform: none;
+      }
+    }
+    .slogen-container{
+      h1{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .description {
+    max-width: 50%;
+    display: flex;
+  }
+  .introduction{
+    flex-direction: column;
+    padding: 15px;
+    .self-image{
+      .adrienn{
+        width: 280px;
+      }
+      .circle{
+        transform: translate(120px, -375px);
+      }
+
+    }
+
+  }
+}
+
+
+
+@keyframes slogen-move {
+  0% {
+    top: 5%;
+    font-size: 10px;
+  }
+  100% {
+    top: 40%;
+    font-size: 20px;
+  }
+}
+@keyframes slogen-part-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes image-show {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

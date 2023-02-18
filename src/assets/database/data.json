@@ -1,0 +1,30 @@
+{
+  "prices": [
+    { "serviceName": "Hajvágás", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Festés", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Balayage", "shortHairPrice": 20000, "longHairPrice": 25000 },
+    { "serviceName": "Baby-lights", "shortHairPrice": 22000, "longHairPrice": 23500 },
+    { "serviceName": "Hajvágás", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Festés", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Balayage", "shortHairPrice": 20000, "longHairPrice": 25000 },
+    { "serviceName": "Baby-lights", "shortHairPrice": 22000, "longHairPrice": 23500 },
+    { "serviceName": "Hajvágás", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Festés", "shortHairPrice": 1500, "longHairPrice": 2500 },
+    { "serviceName": "Balayage", "shortHairPrice": 20000, "longHairPrice": 25000 },
+    { "serviceName": "Baby-lights", "shortHairPrice": 22000, "longHairPrice": 23500 }
+  ],
+    "paintServices": [
+    { "serviceName": "Hajvágás"},
+    { "serviceName": "Festés"},
+    { "serviceName": "Balayage" },
+    { "serviceName": "Baby-lights" },
+    { "serviceName": "Hajvágás" },
+    { "serviceName": "Festés" },
+    { "serviceName": "Balayage" },
+    { "serviceName": "Baby-lights"},
+    { "serviceName": "Hajvágás" },
+    { "serviceName": "Festés" },
+    { "serviceName": "Balayage" },
+    { "serviceName": "Baby-lights" }
+  ]
+}

@@ -1,0 +1,56 @@
+@import "/src/colors.scss";
+/* You can add global styles to this file, and also import other style files */
+
+
+
+body {
+  margin: 0;
+  font-family: 'exo','Arial';
+  color: $primary-dark;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@font-face {
+  font-family: "exo";
+  src: local("exo"), url(./assets/fonts/Exo/static/Exo-Regular.ttf) format("truetype");
+}
+
+
+//Drop-down-box
+.mat-form-field{
+  .mat-form-field-wrapper{
+    width: 350px;
+    .mat-form-field-infix{
+      border-top: none;
+      padding: 10px 0px 10px 0px;
+    }
+    .mat-form-field-flex{
+      padding-top: 0px;
+    }
+  }
+}
+
+.mat-form-field-label-wrapper{
+  padding: 0px;
+  top:0
+}
+
+.cdk-overlay-pane{
+  .mat-select-panel{
+    .mat-option{
+      height: 40px;
+    }
+  }
+}
+
+
+.mat-select{
+  .mat-select-trigger{
+    .mat-select-arrow-wrapper{
+      transform: translateY(0);
+    }
+  }
+}
+
+
